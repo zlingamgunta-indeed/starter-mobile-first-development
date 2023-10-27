@@ -1,3 +1,5 @@
+/* General Styles */
+
 main {
   margin-top: 60px;
 }
@@ -26,4 +28,38 @@ main h3 {
 main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
+}
+
+.group img {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+.footer {
+  background-color: green;
+}
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
 }
